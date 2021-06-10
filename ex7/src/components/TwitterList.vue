@@ -4,7 +4,7 @@
      <div id="wrap">
         <div class="flexBox" v-for="(item,idx) in items" :key="idx">
         <div class="img">
-          <img src="https://randomuser.me/api/portraits/men/81.jpg">
+          <img v-bind:src="item.picture">
         </div>
           <div class="user-id">{{item.id}}</div>
           <div class="name">{{item.firstName}}</div>
